@@ -1,0 +1,7 @@
+{
+  "name": "Crunchy | Dimensional Gastronomy",
+  "description": "A premium fast-food experience featuring 3D isometric visuals and a bold, modern menu.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
