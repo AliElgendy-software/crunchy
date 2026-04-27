@@ -35,7 +35,7 @@ export function useAuth() {
     const [state, setState] = useState<AuthState>(_state);
 
     const login = useCallback((email: string, password: string) => {
-        const found = USERS.find(u => u.email === email && u.password === password);
+        const found = USERS.find(u => u.email === email.trim().toLowerCase() && u.password === password);
         if (!found) return null; // Invalid credentials
 
         const { password: _, ...user } = found;
